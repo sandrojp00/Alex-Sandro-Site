@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -7,52 +8,386 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Alex & Sandro | Manutenção Residencial, Predial e Automação no RJ</title>
+
+    <!-- ===========================
+         SEO PRINCIPAL
+    ============================ -->
+
+    <title>Alex & Sandro | Manutenção Residencial e Predial no RJ</title>
 
     <meta name="description"
-        content="Alex & Sandro: mais de 25 anos de experiência em manutenção residencial e predial no Rio de Janeiro. Serviços elétricos, hidráulicos, pintura, reformas, instalações e automação residencial. Solicite seu orçamento.">
-
-    <meta name="keywords"
-        content="manutenção residencial RJ, manutenção predial RJ, eletricista RJ, hidráulica RJ, pintura, reformas, instalações, automação residencial, Alex e Sandro">
+        content="Alex & Sandro: manutenção residencial e predial no Rio de Janeiro. Serviços de elétrica, hidráulica, pintura, reformas, instalações e automação residencial. Solicite um orçamento.">
 
     <meta name="author" content="Alex & Sandro">
 
     <meta name="robots" content="index, follow">
 
-    <meta name="google-site-verification" content="e5Vsvi0014i27IPlaJHWSZb4dDWH3lmNPhCEfHpeLXs">
+    <link rel="canonical"
+        href="https://sandrojp00.github.io/Alex-Sandro-Site/">
 
-    <!-- Open Graph - compartilhamento nas redes sociais -->
+
+    <!-- ===========================
+         GOOGLE SEARCH CONSOLE
+    ============================ -->
+
+    <meta name="google-site-verification"
+        content="e5Vsvi0014i27IPlaJHWSZb4dDWH3lmNPhCEfHpeLXs">
+
+
+    <!-- ===========================
+         OPEN GRAPH
+    ============================ -->
 
     <meta property="og:title"
-        content="Alex & Sandro | Manutenção Residencial e Predial">
+        content="Alex & Sandro | Manutenção Residencial e Predial no RJ">
 
     <meta property="og:description"
-        content="Mais de 25 anos de experiência em manutenção residencial e predial no Rio de Janeiro. Elétrica, hidráulica, pintura, reformas, instalações e automação residencial.">
+        content="Manutenção residencial e predial no Rio de Janeiro. Elétrica, hidráulica, pintura, reformas, instalações e automação residencial.">
 
     <meta property="og:type"
         content="website">
 
+    <meta property="og:url"
+        content="https://sandrojp00.github.io/Alex-Sandro-Site/">
+
     <meta property="og:image"
-        content="assets/images/logo.png">
+        content="https://sandrojp00.github.io/Alex-Sandro-Site/assets/images/logo.png">
 
-    <!-- Favicon -->
+    <meta property="og:site_name"
+        content="Alex & Sandro">
 
-    <link rel="icon" type="image/png" href="assets/images/logo.png">
+    <meta property="og:locale"
+        content="pt_BR">
 
-    <!-- Fonte Poppins -->
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- ===========================
+         TWITTER CARD
+    ============================ -->
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="twitter:card"
+        content="summary_large_image">
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    <meta name="twitter:title"
+        content="Alex & Sandro | Manutenção Residencial e Predial no RJ">
+
+    <meta name="twitter:description"
+        content="Manutenção residencial e predial no Rio de Janeiro. Elétrica, hidráulica, pintura, reformas, instalações e automação residencial.">
+
+    <meta name="twitter:image"
+        content="https://sandrojp00.github.io/Alex-Sandro-Site/assets/images/logo.png">
+
+
+    <!-- ===========================
+         FAVICON
+    ============================ -->
+
+    <link rel="icon"
+        type="image/png"
+        href="assets/images/logo.png">
+
+
+    <!-- ===========================
+         FONTE
+    ============================ -->
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
 
-    <!-- CSS -->
 
-    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- ===========================
+         CSS
+    ============================ -->
+
+    <link rel="stylesheet"
+        href="assets/css/style.css">
+
+
+    <!-- ===========================
+         ESTILO DA SEÇÃO DICAS
+    ============================ -->
+
+    <style>
+
+        #tips {
+            background: var(--light);
+        }
+
+
+        #tips .section-title {
+            max-width: 760px;
+        }
+
+
+        .tips-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin-top: 45px;
+        }
+
+
+        .tip-card {
+            position: relative;
+            display: flex;
+            background: var(--white);
+            border: 1px solid rgba(11, 61, 145, 0.10);
+            border-radius: 14px;
+            overflow: hidden;
+            transition:
+                transform 0.3s ease,
+                box-shadow 0.3s ease,
+                border-color 0.3s ease;
+        }
+
+
+        .tip-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: var(--secondary);
+        }
+
+
+        .tip-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(11, 61, 145, 0.18);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.07);
+        }
+
+
+        .tip-content {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 30px 28px 28px;
+        }
+
+
+        .tip-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 15px;
+            margin-bottom: 24px;
+        }
+
+
+        .tip-number {
+            color: rgba(11, 61, 145, 0.20);
+            font-size: 1.15rem;
+            font-weight: 700;
+            line-height: 1;
+        }
+
+
+        .tip-category {
+            color: var(--secondary);
+            font-size: 0.76rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+
+        .tip-card h3 {
+            color: var(--primary);
+            font-size: 1.25rem;
+            line-height: 1.45;
+            margin: 0 0 15px;
+        }
+
+
+        .tip-card p {
+            color: #666;
+            font-size: 0.94rem;
+            line-height: 1.75;
+            margin: 0;
+        }
+
+
+        .tip-card a {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            width: fit-content;
+            margin-top: 25px;
+            color: var(--primary);
+            font-size: 0.92rem;
+            font-weight: 700;
+            text-decoration: none;
+            transition:
+                color 0.3s ease,
+                gap 0.3s ease;
+        }
+
+
+        .tip-card a span {
+            font-size: 1.1rem;
+            transition: transform 0.3s ease;
+        }
+
+
+        .tip-card a:hover {
+            color: var(--secondary);
+            gap: 11px;
+        }
+
+
+        .tip-card a:hover span {
+            transform: translateX(2px);
+        }
+
+
+        /* ===========================
+           RESPONSIVO
+        ============================ */
+
+        @media (max-width: 900px) {
+
+            .tips-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+
+            .tip-content {
+                padding: 28px 25px;
+            }
+
+        }
+
+
+        @media (max-width: 768px) {
+
+            .tips-grid {
+                margin-top: 35px;
+            }
+
+
+            .tip-card {
+                border-radius: 12px;
+            }
+
+
+            .tip-card h3 {
+                font-size: 1.2rem;
+            }
+
+
+            .tip-card p {
+                font-size: 0.92rem;
+            }
+
+        }
+
+    </style>
+
+
+    <!-- ===========================
+         DADOS ESTRUTURADOS
+         EMPRESA
+    ============================ -->
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://sandrojp00.github.io/Alex-Sandro-Site/#empresa",
+
+        "name": "Alex & Sandro",
+
+        "description": "Empresa de manutenção residencial e predial com mais de 25 anos de experiência, oferecendo serviços de elétrica, hidráulica, pintura, alvenaria, instalações, forros e automação residencial.",
+
+        "url": "https://sandrojp00.github.io/Alex-Sandro-Site/",
+
+        "telephone": "+55 21 97556-7891",
+
+        "image": "https://sandrojp00.github.io/Alex-Sandro-Site/assets/images/logo.png",
+
+        "logo": "https://sandrojp00.github.io/Alex-Sandro-Site/assets/images/logo.png",
+
+        "priceRange": "$$",
+
+        "areaServed": [
+            {
+                "@type": "City",
+                "name": "Rio de Janeiro"
+            },
+            {
+                "@type": "City",
+                "name": "Duque de Caxias"
+            },
+            {
+                "@type": "City",
+                "name": "Nova Iguaçu"
+            },
+            {
+                "@type": "City",
+                "name": "São João de Meriti"
+            },
+            {
+                "@type": "City",
+                "name": "Belford Roxo"
+            },
+            {
+                "@type": "City",
+                "name": "Mesquita"
+            },
+            {
+                "@type": "City",
+                "name": "Nilópolis"
+            },
+            {
+                "@type": "City",
+                "name": "Queimados"
+            },
+            {
+                "@type": "City",
+                "name": "Japeri"
+            },
+            {
+                "@type": "City",
+                "name": "Magé"
+            },
+            {
+                "@type": "City",
+                "name": "Niterói"
+            },
+            {
+                "@type": "City",
+                "name": "São Gonçalo"
+            }
+        ],
+
+        "serviceType": [
+            "Manutenção residencial",
+            "Manutenção predial",
+            "Serviços elétricos",
+            "Serviços hidráulicos",
+            "Pintura",
+            "Alvenaria",
+            "Instalação de forros",
+            "Instalações residenciais",
+            "Automação residencial"
+        ],
+
+        "sameAs": []
+    }
+    </script>
 
 </head>
+
 
 <body>
 
@@ -69,37 +404,58 @@
                 <h2>Alex & Sandro</h2>
             </div>
 
-            <button class="menu-toggle" aria-label="Abrir menu">
+
+            <button
+                class="menu-toggle"
+                aria-label="Abrir menu"
+            >
                 ☰
             </button>
+
 
             <nav>
 
                 <ul>
 
                     <li>
-                        <a href="#services">Serviços</a>
+                        <a href="#services">
+                            Serviços
+                        </a>
                     </li>
 
                     <li>
-                        <a href="#about">Sobre</a>
+                        <a href="#about">
+                            Sobre
+                        </a>
                     </li>
 
                     <li>
-                        <a href="#coverage">Atendimento</a>
+                        <a href="#coverage">
+                            Atendimento
+                        </a>
                     </li>
 
                     <li>
-                        <a href="#contact">Contato</a>
+                        <a href="#tips">
+                            Dicas
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#contact">
+                            Contato
+                        </a>
                     </li>
 
                 </ul>
 
             </nav>
 
+
             <a
                 href="https://wa.me/5521975567891?text=Olá!%20Encontrei%20o%20site%20da%20Alex%20%26%20Sandro%20e%20gostaria%20de%20solicitar%20um%20orçamento"
                 target="_blank"
+                rel="noopener noreferrer"
                 class="btn-header"
             >
                 Solicitar orçamento
@@ -125,7 +481,6 @@
 
             <div class="container hero-container">
 
-                <!-- Texto -->
 
                 <div class="hero-text">
 
@@ -134,22 +489,23 @@
                     </span>
 
                     <h1>
-                        Alex & Sandro
+                        Manutenção Residencial e Predial no Rio de Janeiro
                     </h1>
 
                     <h2>
-                        Manutenção Residencial e Predial
+                        Alex & Sandro
                     </h2>
 
                     <p>
-                        Elétrica, hidráulica, pintura, alvenaria,
-                        instalações, automação residencial e diversos
-                        serviços para residências e empresas.
+                        Serviços de elétrica, hidráulica, pintura, alvenaria,
+                        instalações, automação residencial e manutenção para
+                        residências e empresas no Rio de Janeiro.
                     </p>
 
                     <a
                         href="https://wa.me/5521975567891?text=Olá!%20Encontrei%20o%20site%20da%20Alex%20%26%20Sandro%20e%20gostaria%20de%20solicitar%20um%20orçamento"
                         target="_blank"
+                        rel="noopener noreferrer"
                         class="hero-button"
                     >
                         Solicitar orçamento
@@ -158,13 +514,11 @@
                 </div>
 
 
-                <!-- Imagem -->
-
                 <div class="hero-image">
 
                     <img
                         src="assets/images/profissional.png"
-                        alt="Profissional da Alex & Sandro"
+                        alt="Profissional da Alex & Sandro realizando serviço de manutenção residencial"
                         class="hero-photo"
                     >
 
@@ -194,8 +548,9 @@
                     </h2>
 
                     <p>
-                        Soluções completas para residências, condomínios e empresas,
-                        sempre com qualidade, segurança e atendimento profissional.
+                        Soluções completas de manutenção residencial e predial
+                        para casas, condomínios e empresas, com qualidade,
+                        segurança e atendimento profissional.
                     </p>
 
                 </div>
@@ -338,9 +693,10 @@
                     </h2>
 
                     <p>
-                        Há mais de 25 anos realizando serviços com qualidade,
-                        responsabilidade e atendimento profissional em boa parte do
-                        estado do Rio de Janeiro.
+                        Há mais de 25 anos realizando serviços de manutenção
+                        residencial e predial com qualidade, responsabilidade
+                        e atendimento profissional em boa parte do estado
+                        do Rio de Janeiro.
                     </p>
 
                 </div>
@@ -697,6 +1053,7 @@
                             href="https://wa.me/5521975567891?text=Olá!%20Encontrei%20o%20site%20da%20Alex%20%26%20Sandro%20e%20gostaria%20de%20saber%20se%20há%20atendimento%20na%20minha%20região"
                             class="coverage-button"
                             target="_blank"
+                            rel="noopener noreferrer"
                         >
                             Consultar atendimento
                         </a>
@@ -718,6 +1075,157 @@
                         </div>
 
                     </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ===========================
+             DICAS
+        ============================ -->
+
+        <section id="tips">
+
+            <div class="container">
+
+                <div class="section-title">
+
+                    <span>
+                        Dicas e informações
+                    </span>
+
+                    <h2>
+                        Conteúdo para cuidar melhor do seu imóvel
+                    </h2>
+
+                    <p>
+                        Informações práticas sobre manutenção residencial e predial
+                        para ajudar você a identificar problemas e cuidar melhor
+                        da sua casa ou empresa.
+                    </p>
+
+                </div>
+
+
+                <div class="tips-grid">
+
+
+                    <!-- DICA 1 -->
+
+                    <article class="tip-card">
+
+                        <div class="tip-content">
+
+                            <div class="tip-top">
+
+                                <span class="tip-number">
+                                    01
+                                </span>
+
+                                <span class="tip-category">
+                                    Hidráulica
+                                </span>
+
+                            </div>
+
+
+                            <h3>
+                                Como identificar um vazamento de água em casa
+                            </h3>
+
+                            <p>
+                                Saiba quais sinais observar, como fazer um teste simples
+                                no hidrômetro e quando procurar ajuda profissional.
+                            </p>
+
+                            <a href="dicas/vazamento-de-agua.html">
+                                Ler artigo
+                                <span>→</span>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- DICA 2 -->
+
+                    <article class="tip-card">
+
+                        <div class="tip-content">
+
+                            <div class="tip-top">
+
+                                <span class="tip-number">
+                                    02
+                                </span>
+
+                                <span class="tip-category">
+                                    Elétrica
+                                </span>
+
+                            </div>
+
+
+                            <h3>
+                                5 sinais de que sua instalação elétrica precisa de atenção
+                            </h3>
+
+                            <p>
+                                Conheça sinais que podem indicar problemas na instalação
+                                elétrica e entenda quando é importante investigar.
+                            </p>
+
+                            <a href="dicas/sinais-instalacao-eletrica.html">
+                                Ler artigo
+                                <span>→</span>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- DICA 3 -->
+
+                    <article class="tip-card">
+
+                        <div class="tip-content">
+
+                            <div class="tip-top">
+
+                                <span class="tip-number">
+                                    03
+                                </span>
+
+                                <span class="tip-category">
+                                    Manutenção
+                                </span>
+
+                            </div>
+
+
+                            <h3>
+                                Manutenção preventiva: por que ela é importante?
+                            </h3>
+
+                            <p>
+                                Entenda como pequenos cuidados podem evitar problemas
+                                maiores, preservar o imóvel e reduzir imprevistos.
+                            </p>
+
+                            <a href="dicas/manutencao-preventiva.html">
+                                Ler artigo
+                                <span>→</span>
+                            </a>
+
+                        </div>
+
+                    </article>
 
 
                 </div>
@@ -775,6 +1283,7 @@
                             href="https://wa.me/5521975567891?text=Olá!%20Encontrei%20o%20site%20da%20Alex%20%26%20Sandro%20e%20gostaria%20de%20solicitar%20um%20orçamento"
                             class="contact-button"
                             target="_blank"
+                            rel="noopener noreferrer"
                         >
                             Falar pelo WhatsApp
                         </a>
@@ -834,6 +1343,7 @@
                     <a
                         href="https://wa.me/5521975567891?text=Olá!%20Encontrei%20o%20site%20da%20Alex%20%26%20Sandro%20e%20gostaria%20de%20solicitar%20um%20orçamento"
                         target="_blank"
+                        rel="noopener noreferrer"
                     >
                         Solicitar orçamento
                     </a>
@@ -861,10 +1371,13 @@
     </footer>
 
 
-    <!-- JavaScript -->
+    <!-- ===========================
+         JAVASCRIPT
+    ============================ -->
 
     <script src="assets/js/script.js"></script>
 
 </body>
 
 </html>
+```

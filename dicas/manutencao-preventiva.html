@@ -1,0 +1,906 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Manutenção preventiva: por que ela é importante? | Alex & Sandro</title>
+
+    <meta name="description"
+        content="Entenda por que a manutenção preventiva é importante para residências e empresas, quais problemas ela pode evitar e como cuidar melhor do seu imóvel.">
+
+    <meta name="robots" content="index, follow">
+
+    <meta name="author" content="Alex & Sandro">
+
+    <link rel="canonical"
+        href="https://sandrojp00.github.io/Alex-Sandro-Site/dicas/manutencao-preventiva.html">
+
+
+    <!-- ===========================
+         OPEN GRAPH
+    ============================ -->
+
+    <meta property="og:title"
+        content="Manutenção preventiva: por que ela é importante?">
+
+    <meta property="og:description"
+        content="Veja como a manutenção preventiva pode ajudar a evitar problemas, reduzir gastos e conservar melhor sua residência ou empresa.">
+
+    <meta property="og:type"
+        content="article">
+
+    <meta property="og:url"
+        content="https://sandrojp00.github.io/Alex-Sandro-Site/dicas/manutencao-preventiva.html">
+
+    <meta property="og:image"
+        content="https://sandrojp00.github.io/Alex-Sandro-Site/assets/images/reforma.jpg">
+
+    <meta property="og:locale"
+        content="pt_BR">
+
+
+    <!-- ===========================
+         FONTE
+    ============================ -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+
+    <!-- ===========================
+         CSS PRINCIPAL
+    ============================ -->
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+
+    <!-- ===========================
+         CSS ESPECÍFICO DO ARTIGO
+    ============================ -->
+
+    <style>
+
+        /* ===========================
+           PÁGINA DO ARTIGO
+        ============================ */
+
+        .article-page {
+            background: var(--light);
+            padding: 180px 0 80px;
+        }
+
+
+        .article-container {
+            max-width: 860px;
+            margin: 0 auto;
+        }
+
+
+        /* ===========================
+           CABEÇALHO
+        ============================ */
+
+        .article-header {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            margin-bottom: 65px;
+            padding: 20px 10px 0;
+        }
+
+
+        .article-category {
+            display: inline-block;
+            color: var(--secondary);
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            margin-bottom: 18px;
+        }
+
+
+        .article-header h1 {
+            max-width: 800px;
+            margin: 0 auto 22px;
+            color: var(--primary);
+            font-size: 3rem;
+            line-height: 1.18;
+        }
+
+
+        .article-intro {
+            max-width: 720px;
+            margin: 0 auto;
+            color: #666;
+            font-size: 1.08rem;
+            line-height: 1.85;
+        }
+
+
+        /* ===========================
+           CONTEÚDO EDITORIAL
+        ============================ */
+
+        .article-content {
+            position: relative;
+            z-index: 1;
+        }
+
+
+        .article-content h2 {
+            color: var(--primary);
+            font-size: 1.75rem;
+            line-height: 1.3;
+            margin-top: 55px;
+            margin-bottom: 18px;
+        }
+
+
+        .article-content h2:first-child {
+            margin-top: 0;
+        }
+
+
+        .article-content h3 {
+            color: var(--primary);
+            font-size: 1.3rem;
+            line-height: 1.4;
+            margin-top: 40px;
+            margin-bottom: 12px;
+        }
+
+
+        .article-content p {
+            color: #555;
+            font-size: 1rem;
+            line-height: 1.95;
+            margin: 0 0 18px;
+        }
+
+
+        .article-content ul {
+            margin: 25px 0 30px;
+            padding-left: 25px;
+        }
+
+
+        .article-content li {
+            color: #555;
+            line-height: 1.85;
+            margin-bottom: 12px;
+            padding-left: 5px;
+        }
+
+
+        /* ===========================
+           DESTAQUE EDITORIAL
+        ============================ */
+
+        .article-tip {
+            margin: 35px 0;
+            padding: 20px 25px;
+            background: rgba(255, 122, 0, 0.07);
+            border-left: 4px solid var(--secondary);
+        }
+
+
+        .article-tip strong {
+            color: var(--primary);
+        }
+
+
+        /* ===========================
+           DIVISOR
+        ============================ */
+
+        .article-divider {
+            width: 55px;
+            height: 3px;
+            background: var(--secondary);
+            margin: 45px 0;
+            border: none;
+        }
+
+
+        /* ===========================
+           CTA WHATSAPP
+        ============================ */
+
+        .article-cta {
+            margin-top: 65px;
+            padding: 42px 35px;
+            background: var(--primary);
+            border-radius: 14px;
+            text-align: center;
+        }
+
+
+        .article-cta h2 {
+            margin: 0;
+            color: var(--white);
+            font-size: 1.75rem;
+        }
+
+
+        .article-cta p {
+            max-width: 650px;
+            margin: 15px auto 0;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+
+        .article-cta-button {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 14px 30px;
+            background: var(--secondary);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 700;
+            transition: 0.3s;
+        }
+
+
+        .article-cta-button:hover {
+            transform: translateY(-3px);
+        }
+
+
+        /* ===========================
+           VOLTAR
+        ============================ */
+
+        .article-back {
+            text-align: center;
+            margin-top: 35px;
+        }
+
+
+        .article-back a {
+            color: var(--primary);
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+
+        .article-back a:hover {
+            color: var(--secondary);
+        }
+
+
+        /* ===========================
+           RESPONSIVO
+        ============================ */
+
+        @media (max-width: 768px) {
+
+            .article-page {
+                padding: 155px 0 60px;
+            }
+
+
+            .article-container {
+                width: 100%;
+                padding: 0 20px;
+            }
+
+
+            .article-header {
+                margin-bottom: 45px;
+                padding: 15px 0 0;
+            }
+
+
+            .article-category {
+                font-size: 0.78rem;
+                letter-spacing: 1px;
+            }
+
+
+            .article-header h1 {
+                font-size: 2rem;
+                line-height: 1.25;
+            }
+
+
+            .article-intro {
+                font-size: 0.95rem;
+                line-height: 1.75;
+            }
+
+
+            .article-content h2 {
+                font-size: 1.5rem;
+                margin-top: 42px;
+            }
+
+
+            .article-content h3 {
+                font-size: 1.15rem;
+                margin-top: 32px;
+            }
+
+
+            .article-content p,
+            .article-content li {
+                font-size: 0.95rem;
+                line-height: 1.8;
+            }
+
+
+            .article-content ul {
+                padding-left: 22px;
+            }
+
+
+            .article-tip {
+                padding: 18px 20px;
+            }
+
+
+            .article-divider {
+                margin: 35px 0;
+            }
+
+
+            .article-cta {
+                margin-top: 50px;
+                padding: 32px 22px;
+                border-radius: 12px;
+            }
+
+
+            .article-cta h2 {
+                font-size: 1.45rem;
+            }
+
+
+            .article-cta-button {
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+        }
+
+    </style>
+
+
+    <!-- ===========================
+         DADOS ESTRUTURADOS
+    ============================ -->
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Manutenção preventiva: por que ela é importante?",
+        "description": "Entenda por que a manutenção preventiva é importante para residências e empresas, quais problemas ela pode evitar e como cuidar melhor do seu imóvel.",
+        "author": {
+            "@type": "Organization",
+            "name": "Alex & Sandro"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Alex & Sandro",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://sandrojp00.github.io/Alex-Sandro-Site/assets/images/logo.png"
+            }
+        },
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://sandrojp00.github.io/Alex-Sandro-Site/dicas/manutencao-preventiva.html"
+        },
+        "image": "https://sandrojp00.github.io/Alex-Sandro-Site/assets/images/reforma.jpg"
+    }
+    </script>
+
+</head>
+
+
+<body>
+
+
+    <!-- ===========================
+         HEADER
+    ============================ -->
+
+    <header>
+
+        <div class="container">
+
+            <div class="logo">
+                <h2>Alex & Sandro</h2>
+            </div>
+
+
+            <nav>
+
+                <ul>
+
+                    <li>
+                        <a href="../index.html#services">
+                            Serviços
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../index.html#about">
+                            Sobre
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../index.html#coverage">
+                            Atendimento
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../index.html#tips">
+                            Dicas
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../index.html#contact">
+                            Contato
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+
+            <a
+                href="https://wa.me/5521975567891?text=Olá!%20Encontrei%20o%20site%20da%20Alex%20%26%20Sandro%20e%20gostaria%20de%20solicitar%20um%20orçamento"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-header"
+            >
+                Solicitar orçamento
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- ===========================
+         ARTIGO
+    ============================ -->
+
+    <main>
+
+        <section class="article-page">
+
+            <div class="container">
+
+                <div class="article-container">
+
+
+                    <!-- CABEÇALHO -->
+
+                    <header class="article-header">
+
+                        <span class="article-category">
+                            Dicas • Manutenção
+                        </span>
+
+                        <h1>
+                            Manutenção preventiva: por que ela é importante?
+                        </h1>
+
+                        <p class="article-intro">
+                            Pequenos cuidados realizados antes que um problema apareça
+                            podem ajudar a preservar o imóvel, evitar imprevistos e
+                            reduzir gastos com reparos de emergência.
+                        </p>
+
+                    </header>
+
+
+                    <!-- CONTEÚDO -->
+
+                    <article class="article-content">
+
+
+                        <h2>
+                            O que é manutenção preventiva?
+                        </h2>
+
+                        <p>
+                            Manutenção preventiva é o conjunto de cuidados realizados
+                            de forma planejada para identificar desgastes, corrigir
+                            pequenos problemas e manter instalações e equipamentos
+                            funcionando adequadamente.
+                        </p>
+
+                        <p>
+                            Em uma residência ou empresa, isso pode envolver desde
+                            uma verificação de tomadas e torneiras até a observação
+                            de sinais de infiltração, desgaste de pintura, problemas
+                            em portas, instalações hidráulicas e outros pontos do
+                            imóvel.
+                        </p>
+
+                        <p>
+                            A ideia principal é simples: em vez de esperar que algo
+                            apresente uma falha grave, procurar sinais de desgaste
+                            enquanto o problema ainda pode ser controlado.
+                        </p>
+
+
+                        <hr class="article-divider">
+
+
+                        <h2>
+                            Por que a manutenção preventiva é importante?
+                        </h2>
+
+                        <p>
+                            Quando pequenos problemas são ignorados por muito tempo,
+                            eles podem evoluir e exigir reparos maiores.
+                        </p>
+
+                        <p>
+                            Uma pequena infiltração, por exemplo, pode comprometer
+                            pintura e acabamento. Uma tomada com mau contato pode
+                            continuar aquecendo até apresentar um problema mais sério.
+                            Da mesma forma, um vazamento aparentemente pequeno pode
+                            aumentar o consumo de água e causar danos ao imóvel.
+                        </p>
+
+                        <div class="article-tip">
+
+                            <strong>Em resumo:</strong>
+
+                            manutenção preventiva não significa consertar apenas o que
+                            já está quebrado. Ela também significa observar,
+                            acompanhar e agir antes que uma falha se transforme em
+                            um problema maior.
+
+                        </div>
+
+
+                        <h2>
+                            5 benefícios da manutenção preventiva
+                        </h2>
+
+
+                        <h3>
+                            1. Ajuda a evitar problemas maiores
+                        </h3>
+
+                        <p>
+                            Identificar um desgaste ou uma pequena falha no início
+                            costuma ser melhor do que esperar que o problema avance.
+                            Isso permite tomar providências antes que outras partes
+                            da instalação sejam afetadas.
+                        </p>
+
+
+                        <h3>
+                            2. Pode reduzir gastos com reparos
+                        </h3>
+
+                        <p>
+                            Reparos emergenciais podem envolver mais materiais,
+                            mais tempo de serviço e até danos adicionais ao imóvel.
+                            A manutenção preventiva ajuda a reduzir a possibilidade
+                            de chegar a esse ponto.
+                        </p>
+
+                        <p>
+                            Isso não significa que todo problema possa ser evitado,
+                            mas acompanhar o estado da instalação permite agir com
+                            mais planejamento.
+                        </p>
+
+
+                        <h3>
+                            3. Aumenta a vida útil das instalações
+                        </h3>
+
+                        <p>
+                            Instalações e componentes precisam de cuidados ao longo
+                            do tempo. Identificar desgaste, fazer ajustes e corrigir
+                            pequenos problemas pode contribuir para conservar melhor
+                            esses elementos.
+                        </p>
+
+
+                        <h3>
+                            4. Ajuda a preservar o imóvel
+                        </h3>
+
+                        <p>
+                            Um imóvel bem cuidado tende a apresentar menos problemas
+                            relacionados a infiltrações, vazamentos, desgastes e
+                            falhas que acabam comprometendo acabamentos.
+                        </p>
+
+                        <p>
+                            A manutenção também ajuda a perceber alterações que,
+                            muitas vezes, passam despercebidas no dia a dia.
+                        </p>
+
+
+                        <h3>
+                            5. Traz mais tranquilidade para o dia a dia
+                        </h3>
+
+                        <p>
+                            Descobrir um problema justamente quando ele precisa ser
+                            resolvido com urgência pode causar transtornos.
+                        </p>
+
+                        <p>
+                            Manter uma rotina de observação e manutenção ajuda o
+                            proprietário a conhecer melhor o estado do imóvel e
+                            identificar situações que precisam de atenção.
+                        </p>
+
+
+                        <hr class="article-divider">
+
+
+                        <h2>
+                            O que vale a pena observar em casa?
+                        </h2>
+
+                        <p>
+                            Não é necessário esperar que exista um problema evidente
+                            para prestar atenção na manutenção. Alguns sinais simples
+                            podem indicar que determinado ponto merece uma avaliação.
+                        </p>
+
+                        <ul>
+
+                            <li>
+                                Torneiras, registros ou conexões apresentando
+                                vazamentos.
+                            </li>
+
+                            <li>
+                                Tomadas ou interruptores com aquecimento anormal.
+                            </li>
+
+                            <li>
+                                Disjuntores desarmando com frequência.
+                            </li>
+
+                            <li>
+                                Manchas de umidade ou sinais de infiltração.
+                            </li>
+
+                            <li>
+                                Pintura descascando ou formando bolhas.
+                            </li>
+
+                            <li>
+                                Portas, janelas ou componentes apresentando
+                                desgaste incomum.
+                            </li>
+
+                            <li>
+                                Equipamentos ou instalações apresentando
+                                comportamento diferente do habitual.
+                            </li>
+
+                        </ul>
+
+
+                        <div class="article-tip">
+
+                            <strong>Dica:</strong>
+
+                            Faça uma observação periódica do imóvel e anote problemas
+                            que aparecem ao longo do tempo. Isso ajuda a perceber
+                            mudanças que poderiam passar despercebidas.
+
+                        </div>
+
+
+                        <h2>
+                            Manutenção preventiva também vale para empresas e condomínios
+                        </h2>
+
+                        <p>
+                            Em ambientes comerciais e condomínios, a manutenção
+                            preventiva se torna ainda mais importante porque existem
+                            mais pessoas utilizando as instalações e uma quantidade
+                            maior de equipamentos e sistemas.
+                        </p>
+
+                        <p>
+                            Problemas em áreas comuns, instalações elétricas,
+                            hidráulicas ou estruturas podem afetar diversas pessoas
+                            e causar transtornos maiores quando não são identificados
+                            com antecedência.
+                        </p>
+
+                        <p>
+                            Por isso, manter uma rotina de inspeção e acompanhamento
+                            pode ajudar na conservação do imóvel e na identificação
+                            antecipada de necessidades de reparo.
+                        </p>
+
+
+                        <h2>
+                            Qual a melhor frequência para fazer manutenção?
+                        </h2>
+
+                        <p>
+                            Não existe uma única frequência que sirva para todos os
+                            imóveis. A necessidade depende da idade da construção,
+                            das condições das instalações, da utilização do espaço
+                            e dos equipamentos existentes.
+                        </p>
+
+                        <p>
+                            Alguns itens podem precisar de observação mais frequente,
+                            enquanto outros podem ser avaliados em períodos maiores.
+                            O mais importante é não deixar que anos de uso passem
+                            sem nenhuma verificação.
+                        </p>
+
+
+                        <h2>
+                            Quando procurar ajuda profissional?
+                        </h2>
+
+                        <p>
+                            Alguns cuidados simples podem ser realizados pelo próprio
+                            proprietário, como observar sinais de umidade, verificar
+                            pequenos vazamentos aparentes ou acompanhar alterações
+                            no funcionamento de equipamentos.
+                        </p>
+
+                        <p>
+                            Já intervenções em instalações elétricas, hidráulicas,
+                            estruturas ou outros sistemas que exigem conhecimento
+                            técnico devem ser realizadas por profissionais
+                            capacitados.
+                        </p>
+
+                        <p>
+                            Quando existe dúvida sobre a origem de um problema,
+                            procurar ajuda antes de fazer improvisações pode evitar
+                            danos e reduzir riscos.
+                        </p>
+
+
+                        <!-- CTA -->
+
+                        <div class="article-cta">
+
+                            <h2>
+                                Precisa fazer uma manutenção?
+                            </h2>
+
+                            <p>
+                                A Alex & Sandro realiza serviços de manutenção
+                                residencial e predial no Rio de Janeiro. Entre em
+                                contato para consultar atendimento e solicitar um
+                                orçamento.
+                            </p>
+
+                            <a
+                                href="https://wa.me/5521975567891?text=Olá!%20Vi%20a%20dica%20sobre%20manutenção%20preventiva%20no%20site%20da%20Alex%20%26%20Sandro%20e%20gostaria%20de%20solicitar%20um%20orçamento"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="article-cta-button"
+                            >
+                                Falar pelo WhatsApp
+                            </a>
+
+                        </div>
+
+
+                    </article>
+
+
+                    <!-- VOLTAR -->
+
+                    <div class="article-back">
+
+                        <a href="../index.html#tips">
+                            ← Voltar para Dicas e informações
+                        </a>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ===========================
+         RODAPÉ
+    ============================ -->
+
+    <footer>
+
+        <div class="container">
+
+            <div class="footer-content">
+
+
+                <div class="footer-brand">
+
+                    <h2>
+                        Alex & Sandro
+                    </h2>
+
+                    <p>
+                        Manutenção residencial e predial
+                        com experiência, qualidade e compromisso.
+                    </p>
+
+                </div>
+
+
+                <div class="footer-contact">
+
+                    <h3>
+                        Contato
+                    </h3>
+
+                    <p>
+                        WhatsApp: (21) 97556-7891
+                    </p>
+
+                    <a
+                        href="https://wa.me/5521975567891?text=Olá!%20Encontrei%20o%20site%20da%20Alex%20%26%20Sandro%20e%20gostaria%20de%20solicitar%20um%20orçamento"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Solicitar orçamento
+                    </a>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 Alex & Sandro. Todos os direitos reservados.
+                </p>
+
+                <p>
+                    Manutenção Residencial e Predial
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>
+```
