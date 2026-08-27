@@ -3,8 +3,18 @@
 
     <url>
         <loc>https://sandrojp00.github.io/Alex-Sandro-Site/</loc>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://sandrojp00.github.io/Alex-Sandro-Site/dicas/vazamento-de-agua.html</loc>
+    </url>
+
+    <url>
+        <loc>https://sandrojp00.github.io/Alex-Sandro-Site/dicas/sinais-instalacao-eletrica.html</loc>
+    </url>
+
+    <url>
+        <loc>https://sandrojp00.github.io/Alex-Sandro-Site/dicas/manutencao-preventiva.html</loc>
     </url>
 
 </urlset>

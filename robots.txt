@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sandrojp00.github.io/Alex-Sandro-Site/sitemap.xml
